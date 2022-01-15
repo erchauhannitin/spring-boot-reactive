@@ -34,4 +34,11 @@ public class CustomerDao {
                 .delayElements(Duration.ofMillis(100))
                 .map(i -> new Customer(i, "Customer " + i));
     }
+
+    public Flux<Customer> getCustomerHandler(){
+
+        return Flux.range(1,50)
+                .delayElements(Duration.ofMillis(100))
+                .map(i -> new Customer(i, "Customer " + i));
+    }
 }

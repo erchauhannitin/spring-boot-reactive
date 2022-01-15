@@ -1,4 +1,4 @@
-package com.perfect.model;
+package com.perfect.input;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;
@@ -7,9 +7,10 @@ import lombok.NoArgsConstructor;
 @Data
 @NoArgsConstructor
 @AllArgsConstructor
-public class Customer {
+public class ProductInput {
 
-    private int id;
+    private String id;
     private String name;
-
+    private double price;
+    private int quantity;
 }

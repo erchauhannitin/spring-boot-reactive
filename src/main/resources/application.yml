@@ -1,0 +1,13 @@
+spring:
+  data:
+    mongodb:
+#      uri: mongodb://root:password@localhost:27017/productdb
+      database: productdb
+      host: localhost
+      port: 27017
+      username: root
+      password: password
+      authentication-database: admin
+
+server:
+  port: 9292
